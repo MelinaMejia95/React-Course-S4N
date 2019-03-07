@@ -18,9 +18,13 @@ class StatePage extends React.Component {
     return (
       <Segment>
         <h1>Local State</h1>
-        <Button onClick={this.props.increaseLikes} color="red" content="Like" icon="heart" label={
+        <Button onClick={this.props.increaseLikes} 
+          color="red" 
+          content="Like" 
+          icon="heart" 
+          label={
           {basic: true, color: 'red', pointing: 'left', content: this.props.likes}
-        }/>
+          }/>
         <Link to="/">Go to dashboard</Link>
       </Segment>
     );
