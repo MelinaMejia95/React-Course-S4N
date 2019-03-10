@@ -1,4 +1,22 @@
-import { SET_LIKES, RESET_STATE } from '../types/character';
+import { SET_LIKES,
+         RESET_STATE,
+         CHARACTERS_REQUEST,
+         CHARACTERS_SUCCESS,
+         CHARACTERS_ERROR } from '../types/character';
+
+export const fetchCharacterSaga = () => ({
+  type: CHARACTERS_REQUEST
+});
+
+export const fetchCharacterSuccess = payload => ({
+  type: CHARACTERS_SUCCESS,
+  payload
+});
+
+export const fetchCharacterError = payload => ({
+  type: CHARACTERS_ERROR,
+  payload
+});
 
 export const setLikes = payload => ({
   type: SET_LIKES,
